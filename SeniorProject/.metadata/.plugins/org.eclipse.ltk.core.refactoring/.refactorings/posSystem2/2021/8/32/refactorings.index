@@ -1,0 +1,19 @@
+1627805042758	Delete element
+1627805348815	Rename type 'GoogleAPI'
+1627805431140	Rename type 'HourGraph'
+1627805476520	Rename type 'GoogleChart'
+1627805674286	Rename type 'Main'
+1627805736463	Rename type 'HourGraph'
+1627807037560	Delete element
+1627809030797	Rename type 'datepicker'
+1627977959914	Delete element
+1627977994516	Delete element
+1628128688403	Delete element
+1628128784574	Delete element
+1628128803152	Rename type 'GraphFrame'
+1628128825818	Rename type 'mainFrame'
+1628136128092	Encapsulate field 'date'
+1628136185871	Delete element
+1628137156745	Delete element
+1628137867045	Encapsulate field 'store_id'
+1628154050787	Rename type 'InputDate'

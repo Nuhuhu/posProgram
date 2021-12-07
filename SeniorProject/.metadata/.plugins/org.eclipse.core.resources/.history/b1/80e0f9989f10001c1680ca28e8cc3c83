@@ -1,0 +1,77 @@
+package main;
+
+import java.awt.BorderLayout;
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import dto.SmartPlugDTO;
+
+public class ProductGraphFrame extends JFrame {
+	private JButton closeBtn;
+	
+	public ProductGraphFrame(List<SmartPlugDTO> smartPlugDTO, String title) {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+		
+		/*SwingUtilities.invokeLater(() -> {
+			System.setProperty("jxbrowser.license.key",
+					"1BNDHFSC1G08A8RZMY0065AXSRSBN6RRA04NHYXFN4CTBXS4M1K1FQZAJHKB8428Y3HRCE");
+			String base64html = null;
+			String dataUrl = null;
+
+			// Creating and displaying Swing app frame
+			frame = new JFrame("±×·¡ÇÁ");
+
+			String html = new GoogleChartProduct().getProductChart(smartPlugDTO, title);
+			try {
+				base64html = Base64.getEncoder().encodeToString(html.getBytes("UTF-8"));
+				dataUrl = "data:text/html;base64," + base64html;
+			} catch (UnsupportedEncodingException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+
+			// Creating and running Chromium engine
+			Engine engine = Engine.newInstance(HARDWARE_ACCELERATED);
+
+			Browser browser = engine.newBrowser();
+			// Loading the required web page
+			browser.navigation().loadUrl(dataUrl);
+			// Creating Swing component for rendering web content
+			// loaded in the given Browser instance
+			BrowserView view = BrowserView.newInstance(browser);
+
+			// Closing the engine when app frame is about to close
+			frame.addWindowListener(new WindowAdapter() {
+				@Override
+				public void windowClosing(WindowEvent e) {
+					engine.close();
+				}
+			});
+			
+			closeBtn=new JButton("close");
+			closeBtn.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					// TODO Auto-generated method stub
+					frame.dispose();
+				}
+			});
+			
+			frame.setResizable(false);
+			frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+			frame.add(view, BorderLayout.CENTER);
+			frame.add(closeBtn,BorderLayout.NORTH);
+			frame.setBounds(100,100,800,800);
+			frame.setVisible(true);
+		});*/
+	}
+}
